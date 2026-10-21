@@ -25,7 +25,7 @@
 <div class="card"><h2>🗳️ Manage voting</h2><div class="small">The Google Form is the voting system. Its responses are saved in the same Google Sheet used by Ian Eat's.</div><div id="votingAdminInfo" class="summary">Loading voting form...</div><div class="actions"><button class="primary" type="button" onclick="openVotingForm()">Open student voting form</button><button class="btn" type="button" onclick="resetVotingResponses()">Reset all responses</button><button class="btn" type="button" onclick="createNewVotingForm()">Create new voting form</button><button class="btn" type="button" onclick="syncVotingForm()">Sync choices</button></div><input id="place" placeholder="Add food place"><button class="primary" onclick="addPlace()">Add place</button><div id="adminVotes"></div></div>
 <div class="card"><h2>📋 Orders</h2><button class="btn" style="margin:8px 0" onclick="deleteAllOrders()">🗑️ Delete ALL orders</button><input id="search" placeholder="Search name or item" oninput="drawOrders()"><div id="orders"></div></div></div></section></main>
 <script>
-const API='https://script.google.com/macros/s/AKfycbw0bwxe071rNDApTHnj64nLMPHoVxs2gsWomhP6vHrmcTMs2VRMekkGhcn8HUQjkKYq/exec';
+const API='https://script.google.com/macros/s/AKfycbzZki2RWJnsE0h23cGJ5o4eASYS8dbgwmKVejFb4XVpXejhq4WQ2VMbh-wriGtozvIx/exec';
 const GOOGLE_CLIENT_ID='837353591072-2vl56ovqht8q46b48qs2np3aqql0nvlr.apps.googleusercontent.com';
 const TAX_RATE=.06;let adminData=null;let adminSession='';let googleCredential='';let googleUser=null;let voteFormUrl='';
 const $=id=>document.getElementById(id);
